@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Parts Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Bike Parts Store</h1>
+            <div class="cart">
+                <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Bike Chain">
+                <h3>Bike Chain</h3>
+                <p>Durable and high-quality bike chain for smooth rides.</p>
+                <span class="price">$2000</span>
+                <button class="addToCartBtn" data-product="Bike Chain" data-price="15.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Bike Pedals">
+                <h3>Bike Pedals</h3>
+                <p>High-performance pedals for better grip and comfort.</p>
+                <span class="price">$1050</span>
+                <button class="addToCartBtn" data-product="Bike Pedals" data-price="22.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Bike Tires">
+                <h3>Bike Tires</h3>
+                <p>Strong and durable tires for any terrain.</p>
+                <span class="price">$5000</span>
+                <button class="addToCartBtn" data-product="Bike Tires" data-price="39.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Handlebar">
+                <h3>Handlebar</h3>
+                <p>Ergonomic handlebar for better control and comfort.</p>
+                <span class="price">$2999</span>
+                <button class="addToCartBtn" data-product="Handlebar" data-price="29.99">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cartPopup" class="cart-popup">
+            <div class="cart-popup-content">
+                <h2>Your Cart</h2>
+                <ul id="cartItems">
+                    <!-- Items will appear here -->
+                </ul>
+                <p>Total: $<span id="totalPrice">0</span></p>
+                <button id="checkoutBtn">Checkout</button>
+                <button id="closeCartBtn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Bike Parts Store - All rights reserved &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
